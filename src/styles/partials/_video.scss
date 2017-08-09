@@ -12,10 +12,45 @@
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../../../public/img/polina.jpg) no-repeat;
+    /*background: url(../../../public/img/polina.jpg) no-repeat;*/
     background-size: cover;
 }
 .text {
-	padding: 50px 0 150px 0;
-
+	height: 800px;
+	color: #fff;
+	position: relative;
+	top: 150px;
+	a {
+		color: #fff;
+	}
+}
+.section-about {
+	background-color: #313131;
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 0.7)), url(../img/wallbg.png),;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.section-about__01, .section-about__02, .section-about__03 {
+	width: 33.33%;
+	padding: 100px 0;
+	text-align: center;
+	color: #fff;
+	a {
+		color: #fff;
+		transition: 0.2s all;
+		&:hover {
+			color: $global-teal;
+		}
+	}
+}
+.section-about__02 {
+	border-right: 4px solid #fff;
+	border-left: 4px solid #fff;
 }
