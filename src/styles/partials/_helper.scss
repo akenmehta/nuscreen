@@ -4,3 +4,15 @@
 .bold {
 	font-weight: 700;
 }
+.center {
+	text-align: center;
+}
+.invisible {
+	display: none;
+}
+.to-teal {
+	transition: 0.2s all;
+	&:hover {
+		color: $global-teal;
+	}
+}
