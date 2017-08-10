@@ -26,6 +26,7 @@
 }
 .image-grid-child {
 	width: calc(33.33% - 2.8px);
+	height: 30em;
 	img {
 		width: 100%;
 	}
@@ -33,14 +34,116 @@
 @media (max-width:1025px) {
 	.image-grid-child {
 		width: 49.67%;
+		height: 25em;
 	}
 }
-.contact {
-	background: #fff;
-	padding: 120px 0;
+@media (max-width:640px) {
+	.image-grid-child {
+		width: 99.67%;
+	}
 }
-.teal-border {
-	color: $global-teal;
-	border: 1px solid $global-teal;
-	padding: 2px 5px;
+.teal-overlay {
+	background: $global-teal-overlay;
+	width: 100%;
+	height: 100%;
+}
+.image-01 {
+	background: url(../../../dist/img/nuteam.png);
+	background-size: cover;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-01__flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	div {
+		width: 50%;
+		padding: 20px;
+		a {
+			color: #fff;
+		}
+	}
+}
+.image-02 {
+	background-image: url(https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/c116.0.848.848/20766425_1997727150481850_3283545649328422912_n.jpg);
+	background-size: 150%;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-03 {
+	background-image: url(https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/20688501_1967183786827808_6640433397153923072_n.jpg);
+	background-size: 150%;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-04 {
+	background-image: url(https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/20589387_1807617679268011_8754958376657485824_n.jpg);
+	background-size: 150%;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-05 {
+	background-image: url(https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/c121.0.681.681/20590176_1712803749022844_1115396809133391872_n.jpg);
+	background-size: 150%;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-06 {
+	background-image: url(https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/c144.0.681.681/20482415_139150100015720_8474566341590777856_n.jpg);
+	background-size: 150%;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-07 {
+	background-image: url(https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/20478855_145133232736476_352375382004989952_n.jpg);
+	background-size: 150%;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-08 {
+	background-image: url(https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/20481998_105927796768446_6911895765715517440_n.jpg);
+	background-size: 150%;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+
+.image-09 {
+	background: url(../../../dist/img/theboys.png);
+	background-size: cover;
+    background-position: center center;
+    border-bottom: 4px solid #fff;
+}
+.image-09__flex-container {
+	display: flex;
+	align-items: flex-end;
+	div {
+		padding: 20px;
+		a {
+			color: #fff;
+		}
+	}
+}
+.image__flex-container {
+	display: flex;
+	align-items: flex-end;
+	div {
+		padding: 20px;
+		p, a{
+			color: #fff;
+		}
+	}
+}
+.image__flex-container {
+	visibility: hidden;
+}
+.image-02:hover .image__flex-container,
+.image-03:hover .image__flex-container,
+.image-04:hover .image__flex-container,
+.image-05:hover .image__flex-container,
+.image-06:hover .image__flex-container,
+.image-07:hover .image__flex-container,
+.image-08:hover .image__flex-container,
+{
+		visibility: unset;
 }
