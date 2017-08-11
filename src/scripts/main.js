@@ -5,7 +5,7 @@ app.toogleMenu = function() {
 	$('.nav-btn').on('click', function() {
 		$('.menu-items').toggleClass('invisible');
 	})
-}
+};
 
 app.showNavBtn = function() {
 	if(app.windowSize <= 723) {
@@ -16,7 +16,7 @@ app.showNavBtn = function() {
 		$('.nav-btn').addClass('invisible');
 		$('.menu-items').removeClass('invisible');
 	}
-}
+};
 
 app.toggleClassInvisible = function() {
 	if(app.windowSize <= 1007 && app.windowSize >= 623) {
