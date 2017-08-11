@@ -1,18 +1,25 @@
 .read-more {
-	padding: 120px 0;
+	padding: 120px 15px;
 	text-align: center;
 	background: #fff;
 	button {
+		display: block;
+		margin: 20px auto 0 auto;
 		border: 2px solid $global-teal;
 		color: $global-teal;
 		background: #fff;
 		border-radius: 4px;
 		padding: 5px 15px;
+		letter-spacing: 0.1em;
 		transition: 0.2s all;
 		&:hover {
 			border: 2px solid #fff;
 			color: #000;
 		}
+	}
+	p:first-child {
+		color: #aaa;
+		font-size: 0.8em;
 	}
 }
 .image-grid {
@@ -58,7 +65,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	div {
-		width: 50%;
+		width: 40%;
 		padding: 20px;
 		a {
 			color: #fff;
@@ -147,3 +154,4 @@
 {
 		visibility: unset;
 }
+

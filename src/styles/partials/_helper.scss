@@ -1,8 +1,3 @@
-.red {
-	border: 1px solid red;
-	width: 100%;
-	height: 100%;
-}
 .uppercase {
 	text-transform: uppercase;
 }
@@ -20,4 +15,29 @@
 	&:hover {
 		color: $global-teal;
 	}
+}
+.teal-border-bottom {
+	border-bottom: 1px solid $global-teal;
+}
+.biggest-text {
+	font-size: 5em;
+	font-family: 'Pathway Gothic One', 'sans-serif';
+}
+.big-text {
+	font-size: 2.2em;
+}
+.large-text {
+	font-size: 1.8em;
+}
+.medium-text {
+	font-size: 1.5em;
+}
+.small-text {
+	font-size: 0.9em;
+}
+.smallest-text {
+	font-size: 0.7em;
+}
+.pathway-font {
+	font-family: 'Pathway Gothic One', 'sans-serif';	
 }

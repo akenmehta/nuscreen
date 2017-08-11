@@ -12,13 +12,17 @@ app.showNavBtn = function() {
 		$('.nav-btn').removeClass('invisible');
 		$('.menu-items').addClass('invisible');
 	}
+	else {
+		$('.nav-btn').addClass('invisible');
+		$('.menu-items').removeClass('invisible');
+	}
 }
 
-app.removeClassInvisible = function() {
+app.toggleClassInvisible = function() {
 	if(app.windowSize <= 1007 && app.windowSize >= 623) {
 		$('.last-child').removeClass('invisible');
 	}
-	else if(app.windowSize <= 623) {
+	else{
 		$('.last-child').addClass('invisible');
 	}
 };
@@ -26,15 +30,14 @@ app.removeClassInvisible = function() {
 app.windowResize = function() {
 	$(window).resize(function() {
   		app.windowSize = $(window).width();
-  		app.removeClassInvisible();
+  		app.toggleClassInvisible();
   		app.showNavBtn();
-  		console.log(app.windowSize);
 	});
 };
 
 app.init = function() {
 	app.windowResize();
-	app.removeClassInvisible();
+	app.toggleClassInvisible();
 	app.showNavBtn();
 	app.toogleMenu();
 };
